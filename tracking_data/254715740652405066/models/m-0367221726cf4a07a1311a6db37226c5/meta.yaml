@@ -1,0 +1,10 @@
+artifact_location: file:C:/Users/Ahad Ali/Desktop/fraud-detection-mlops/tracking_data/254715740652405066/models/m-0367221726cf4a07a1311a6db37226c5/artifacts
+creation_timestamp: 1780514344950
+experiment_id: '254715740652405066'
+last_updated_timestamp: 1780514349104
+model_id: m-0367221726cf4a07a1311a6db37226c5
+model_type: null
+name: fraud_model
+source_run_id: 16cbc59ed6b64518b2d1453cceba841c
+status: 2
+status_message: null

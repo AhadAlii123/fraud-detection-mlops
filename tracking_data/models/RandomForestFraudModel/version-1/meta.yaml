@@ -1,0 +1,16 @@
+creation_timestamp: 1780514349116
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1780514349116
+model_id: m-0367221726cf4a07a1311a6db37226c5
+name: RandomForestFraudModel
+run_id: 16cbc59ed6b64518b2d1453cceba841c
+run_link: null
+source: models:/m-0367221726cf4a07a1311a6db37226c5
+status: READY
+status_message: null
+storage_location: file:C:/Users/Ahad Ali/Desktop/fraud-detection-mlops/tracking_data/254715740652405066/models/m-0367221726cf4a07a1311a6db37226c5/artifacts
+user_id: null
+version: 1
+workspace: default

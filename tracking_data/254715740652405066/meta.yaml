@@ -1,0 +1,9 @@
+artifact_location: file:C:/Users/Ahad Ali/Desktop/fraud-detection-mlops/tracking_data/254715740652405066
+creation_time: 1780514338176
+effective_trace_archival_retention: null
+experiment_id: '254715740652405066'
+last_update_time: 1780514338176
+lifecycle_stage: active
+name: Fraud_Detection_System
+trace_location: null
+workspace: default
