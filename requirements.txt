@@ -5,3 +5,4 @@ joblib
 scikit-learn==1.6.1
 pandas
 numpy
+prometheus-fastapi-instrumentator==7.0.0

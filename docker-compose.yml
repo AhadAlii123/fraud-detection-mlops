@@ -1,0 +1,36 @@
+version: '3.8'
+
+networks:
+  monitoring_network:
+    driver: bridge
+
+services:
+  fraud-api-container:
+    build: .
+    container_name: fraud-api-container
+    ports:
+      - "8000:8000"
+    networks:
+      - monitoring_network
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus_container
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - monitoring_network
+    depends_on:
+      - fraud-api-container
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana_container
+    ports:
+      - "3000:3000"
+    networks:
+      - monitoring_network
+    depends_on:
+      - prometheus
