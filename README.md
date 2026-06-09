@@ -30,20 +30,23 @@ The completed, saved deployment dashboard tracking resource consumption and real
 
 ## 🚀 CI/CD Automation Pipeline (Jenkins)
 
-The MLOps pipeline is fully automated via Jenkins. On every code push, the pipeline executes the entire lifecycle from model training to production deployment.
+The MLOps pipeline is fully automated and orchestrated locally via a native Jenkins server. On every integration trigger, the continuous execution flow handles the complete model lifecycle from environment preparation to Kubernetes deployment.
 
-### 📊 Pipeline Build Status
-| Build Number | Triggered By | Execution Time | MLflow Logging | Deployment Status |
-| :--- | :--- | :--- | :--- | :--- |
-| **#12 (Latest)** | `Git Push Commit` | 2 mins 45 secs | ✅ Success | 🟢 LIVE (Minikube) |
+### 1. Automated Pipeline Stage View
+The centralized stage logs verify successful parallel execution of core pipeline components including Source Code Checkout, Dependency Setup, MLflow Model Tracking, Docker Image Compilation, and Minikube Cluster Deployment.
 
-### 🛠️ Automated Pipeline Execution Stages
-Below is the execution flow logged by Jenkins during the automated deployment:
+![Jenkins Pipeline Stages](images/Jenkins_Stages.png)
 
-```text
-[Pipeline] 🟢 Stage: Checkout Source Code -> Completed (Success)
-[Pipeline] 🟢 Stage: Environment & Dependencies Setup -> Completed (Success)
-[Pipeline] 🟢 Stage: Model Training & MLflow Tracking -> Logged to MLflow Server (Success)
-[Pipeline] 🟢 Stage: Docker Image Build -> Pushed to DockerHub (Success)
-[Pipeline] 🟢 Stage: Automated Production Deployment -> Applied to Minikube Cluster (Success)
-[Pipeline] Finished: SUCCESS
+---
+
+### 2. Pipeline Build Status & Status Management
+Comprehensive build analytics mapping historical stability, execution success runtime markers, and continuous stable deployment indicators.
+
+![Jenkins Dashboard Status](images/Jenkins_Dashboard.png)
+
+---
+
+### 3. Build Time Trend & Execution Performance
+Real-time monitoring analytics tracking execution time tracking optimization curves across sequential system deployment loops.
+
+![Jenkins Build Time Trend](images/Jenkins_Build_Trend.png)
